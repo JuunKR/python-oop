@@ -5,8 +5,19 @@
 
 class Person(object):
 
-    pass
+    def __init__(self, name, year, address):
+        self.name = name
+        self.year = year
+        self.address = address
 
-if __name__ == '__main__':
+    def age(self):
+        return 2021 - self.year - 1
 
-    p = Person(input('이름을 입력하시오 : '), int(input('출생년도를 입력하시오 : ')), input('주소를 입력하시오 : '))
+    @staticmethod
+    def main():
+        p = Person(input('이름을 입력하시오 : '), int(input('출생년도를 입력하시오 : ')), input('주소를 입력하시오 : '))
+        print(f'이름 : {p.name}')
+        print(f'나이 : {p.age()}')
+        print(f'주소 : {p.address}')
+
+Person.main()
