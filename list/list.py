@@ -4,6 +4,7 @@
 
 ls = []
 ls.append(1)
+
 print(ls)
 
 ls.append(['홍길동',12345])

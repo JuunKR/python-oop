@@ -3,7 +3,7 @@ import random
 class Account(object):
 
     def __init__(self, person_name, balance):
-        self.bank_name = 'sc은행'
+        self.BANK_NAME = 'sc은행'
         self.person_name = person_name
         self.balance = balance
         self.x1 = random.randrange(100,999)
@@ -12,7 +12,7 @@ class Account(object):
     def get_account(self):
 
 
-        return f'은행이름 : {self.bank_name}, 예금주 : {self.person_name}, 계좌번호 : {self.x1}-{self.x2}-{self.x3}, 잔액 : {self.balance} '
+        return f'은행이름 : {self.BANK_NAME}, 예금주 : {self.person_name}, 계좌번호 : {self.x1}-{self.x2}-{self.x3}, 잔액 : {self.balance} '
 
 
     @staticmethod
