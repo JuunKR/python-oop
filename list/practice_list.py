@@ -1,7 +1,3 @@
-
-
-
-
 ls = []
 ls.append(1)
 
@@ -15,11 +11,15 @@ print(ls)
 
 
 for i in enumerate(['a', 'b', 'c']):
-        print(i)
+    print(i)
 
 
 for i, j in enumerate(['a', 'b', 'c']):
     print(i, j)
 
-i = ls
-print(ls)
+for i in enumerate([['a', 'b', 'c'], ['d', 'e', 'f']]):
+    print(i)
+
+for i, j in enumerate([['a', 'b', 'c'], ['d', 'e', 'f']]):
+    print(i, j)
+

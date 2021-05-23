@@ -1,4 +1,3 @@
-'''
 class Add(object):
     def __init__(self, A, B):
         self.A = int(A)
@@ -11,11 +10,6 @@ class Add(object):
         a = Add(input("A : "), input("B : "))
         print(a.get_sum())
 Add.main()
-'''
 
-
-print('Hellow world!')
-
-# include <stdio.h>
 
 
