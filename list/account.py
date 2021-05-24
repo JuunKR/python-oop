@@ -2,7 +2,7 @@ import random
 '''
 인스턴스 메소드와 스태틱 메소드의 차이?
 인스턴트를 가져야한다. 안가져와도 된다.
-왜 여기서 스태틱을 쓰는가?
+왜 여기서 스태틱을 쓰는가? 
 '''
 class Account(object):
     def __init__(self, bank_account, name, money):
