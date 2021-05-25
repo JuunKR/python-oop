@@ -5,6 +5,7 @@ from urllib.request import urlopen
 class Melon(object):
     url = ''
 
+
     def __str__(self):
         return self.url
 

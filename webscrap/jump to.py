@@ -33,11 +33,28 @@ print(add2(7))"""
 # print(cal1.add(4))
 # print(cal2.add(3))
 # print(cal2.add(7))
-class FourCal():
-    def setdata(self,a,b):
-        self.a = a
-        self.b = b
+# class FourCal:
+#     def __init__(self, first, second):
+#         self.first = first
+#         self.second = second
+#     def add(self):
+#         result = self.first + self.second
+#         return result
+#
+# a = FourCal(1, 2)
+# b = FourCal(2, 3)
+#
+# class MoreFourCal(FourCal):
+# d = MoreFourCal(1,2)
+#
+#
+# print(a.add())
+#
+#
+a ={1:'hi'}
+a['d'] ='b'
 
-    def add(self):
-        
-    a = FourCal()
+print(a)
+
+a[1]
+

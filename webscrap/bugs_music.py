@@ -12,12 +12,17 @@ class BugsMusic(object):
 
     @staticmethod
     def get_rank(soup, index):
-        print(f'------------------ {index} Ranking ---------------------')
+        print(f'------------------------------ {index} Ranking ----------------------------------')
         count = 0
-        for i in soup.find_all(name='p', attrs=({"class": index})):
+        for i in soup.find_all(name='p', attrs=({"class": index[0]})):
             count += 1
             print(f'{str(count)}위')
-            print(f'Artist: {i.find("a").text}')
+            print(f'{index[0]}: {i.find("a").text}')
+
+        for i in soup.find_all(name='p', attrs=({"class": index[1]})):
+            count += 1
+            print(f'{str(count)}위')
+            print(f'{index[1]}: {i.find("a").text}')
 
 
 #https://music.bugs.co.kr/chart/track/realtime/total?wl_ref=M_contents_03_01
