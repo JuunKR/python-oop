@@ -1,60 +1,21 @@
-"""result1 = 0
-result2 = 0
+'''
+첫 줄에 테스트케이스의 개수 T가 주어진다. T는 최대 1,000,000이다. 다음 T줄에는 각각 두 정수 A와 B가 주어진다. A와 B는 1 이상, 1,000 이하이다.
 
-def add1(num):
-    global result1
-    result1 += num
-    return result1
+각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.
 
-def add2(num):
-    global result2
-    result2 += num
-    return result2
+5
+1 1
+12 34
+5 500
+40 60
+1000 1000
+'''
 
-print(add1(3))
-print(add1(4))
-print(add2(3))
-print(add2(7))"""
-#
-# class Calculator:
-#     def __init__(self):
-#         self.result = 0
-#
-#     def add(self, num):
-#         self.result += num
-#         return self.result
-#
-# cal1 = Calculator()
-# cal2 = Calculator()
-#
-#
-#
-# print(cal1.add(3))
-# print(cal1.add(4))
-# print(cal2.add(3))
-# print(cal2.add(7))
-# class FourCal:
-#     def __init__(self, first, second):
-#         self.first = first
-#         self.second = second
-#     def add(self):
-#         result = self.first + self.second
-#         return result
-#
-# a = FourCal(1, 2)
-# b = FourCal(2, 3)
-#
-# class MoreFourCal(FourCal):
-# d = MoreFourCal(1,2)
-#
-#
-# print(a.add())
-#
-#
-a ={1:'hi'}
-a['d'] ='b'
+import sys
+number = int(input())
 
-print(a)
+for i in range(number):
+    a, b = map(int,sys.stdin.readline().split())
+    print(a)
 
-a[1]
 

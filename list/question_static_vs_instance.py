@@ -51,7 +51,7 @@ class Account(object):
         '''
 
         # 인스턴스 생성 X
-        print(Account.instance_number(1)) # self 를 안넣을 경우 빨간줄 그어지지만 실행가능, self 를 넣으면 숫자나 문자 넣어야함.
+        print(Account.instance_number()) # self 를 안넣을 경우 빨간줄 그어지지만 실행가능, self 를 넣으면 숫자나 문자 넣어야함.
 
         print(Account.static_number())
 
